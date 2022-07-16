@@ -64,11 +64,13 @@ namespace 滑鼠鍵盤活動了多久
 
         }
 
+        private static System.Threading.Timer timer;
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Location = new Point(Screen.PrimaryScreen.Bounds.Width - this.Width, Screen.PrimaryScreen.Bounds.Top + 5);
 
-            System.Threading.Timer timer = new System.Threading.Timer(new TimerCallback(CallbackMethod), new object(), 0, 1000);
+            timer = new System.Threading.Timer(new TimerCallback(CallbackMethod), new object(), 0, 1000);
+           
             new FormEvent(this, UserActived).BeginForm();
 
             // 設置背景全透明
