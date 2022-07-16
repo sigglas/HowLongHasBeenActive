@@ -1,11 +1,9 @@
 ﻿using ScreenCapyure2;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
-namespace 活動了多久
+namespace 滑鼠鍵盤活動了多久
 {
     internal class FormEvent
     {

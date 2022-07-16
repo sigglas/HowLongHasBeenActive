@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Reflection;
-using System.Threading;
-using System.Windows.Forms;
 using System.ComponentModel;
-using ScreenCapyure2;
-using 活動了多久;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace ScreenCapyure2
 {

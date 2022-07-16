@@ -3,12 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "滑鼠鍵盤活動了多久", "滑鼠鍵盤活動了多久\滑鼠鍵盤活動了多久.csproj", "{338F2316-5BF2-4C0D-9665-0A2CDD10F1B3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C58C7AA-AB93-4A51-A12A-89B42ECCE269}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "滑鼠鍵盤活動了多久", "滑鼠鍵盤活動了多久\滑鼠鍵盤活動了多久.csproj", "{2834A790-35E0-49CC-857E-7FC65AFF4C44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{338F2316-5BF2-4C0D-9665-0A2CDD10F1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{338F2316-5BF2-4C0D-9665-0A2CDD10F1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{338F2316-5BF2-4C0D-9665-0A2CDD10F1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{338F2316-5BF2-4C0D-9665-0A2CDD10F1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2834A790-35E0-49CC-857E-7FC65AFF4C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2834A790-35E0-49CC-857E-7FC65AFF4C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2834A790-35E0-49CC-857E-7FC65AFF4C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2834A790-35E0-49CC-857E-7FC65AFF4C44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {57320E18-2A76-4756-9172-0929DA00ACB9}
+		SolutionGuid = {1BF4E5D8-DB0B-4B0E-AE35-A26B7EB7AFAA}
 	EndGlobalSection
 EndGlobal

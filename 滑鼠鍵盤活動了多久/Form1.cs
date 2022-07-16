@@ -1,6 +1,9 @@
-using System.Diagnostics;
+﻿using System;
+using System.Drawing;
+using System.Threading;
+using System.Windows.Forms;
 
-namespace 活動了多久
+namespace 滑鼠鍵盤活動了多久
 {
     public partial class Form1 : Form
     {

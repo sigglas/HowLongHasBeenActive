@@ -1,4 +1,6 @@
-﻿namespace 活動了多久
+﻿using System.Windows.Forms;
+
+namespace 滑鼠鍵盤活動了多久
 {
     partial class Form1
     {
@@ -42,9 +44,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(3, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 2;
@@ -54,9 +56,9 @@
             // 
             this.lab_activeTime.AutoSize = true;
             this.lab_activeTime.BackColor = System.Drawing.Color.Transparent;
-            this.lab_activeTime.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lab_activeTime.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.lab_activeTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lab_activeTime.Location = new System.Drawing.Point(76, 9);
+            this.lab_activeTime.Location = new System.Drawing.Point(72, 7);
             this.lab_activeTime.Name = "lab_activeTime";
             this.lab_activeTime.Size = new System.Drawing.Size(63, 15);
             this.lab_activeTime.TabIndex = 3;
@@ -66,9 +68,9 @@
             // 
             this.lab_stopTime.AutoSize = true;
             this.lab_stopTime.BackColor = System.Drawing.Color.Transparent;
-            this.lab_stopTime.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lab_stopTime.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.lab_stopTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lab_stopTime.Location = new System.Drawing.Point(76, 32);
+            this.lab_stopTime.Location = new System.Drawing.Point(72, 26);
             this.lab_stopTime.Name = "lab_stopTime";
             this.lab_stopTime.Size = new System.Drawing.Size(63, 15);
             this.lab_stopTime.TabIndex = 5;
@@ -78,9 +80,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(3, 32);
+            this.label4.Location = new System.Drawing.Point(3, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 4;
@@ -102,11 +104,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(171, 57);
+            this.ClientSize = new System.Drawing.Size(147, 46);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lab_activeTime);
@@ -114,6 +116,7 @@
             this.Controls.Add(this.label4);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowInTaskbar = false;
@@ -137,3 +140,4 @@
         private ToolStripMenuItem closeToolStripMenuItem;
     }
 }
+
