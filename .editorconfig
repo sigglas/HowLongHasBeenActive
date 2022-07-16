@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS8602: 可能 null 參考的取值 (dereference)。
+dotnet_diagnostic.CS8602.severity = none
+
+# CS8622: 參數類型中參考型別是否可為 Null 的情況，與目標委派不相符 (可能的原因是屬性可為 Null)。
+dotnet_diagnostic.CS8622.severity = none
