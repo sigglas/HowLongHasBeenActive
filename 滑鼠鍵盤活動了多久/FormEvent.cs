@@ -23,8 +23,16 @@ namespace 滑鼠鍵盤活動了多久
             choosesc = new UserActivityHook();
             choosesc.OnMouseActivity += new MouseEventHandler(choose_OnMouseActivity);
             //choosesc.KeyDown += new KeyEventHandler(MyKeyDown);
-            //choosesc.KeyPress += new KeyPressEventHandler(MyKeyPress);
+            choosesc.KeyPress += Choosesc_KeyPress;
             //choosesc.KeyUp += new KeyEventHandler(MyKeyUp);
+        }
+
+        private void Choosesc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar > 0)
+            {
+                userActived();
+            }
         }
 
         Point lastPoint = Point.Empty;
