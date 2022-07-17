@@ -37,6 +37,10 @@ namespace 滑鼠鍵盤活動了多久
             this.label4 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lab_distance = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lab_keyCount = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +74,7 @@ namespace 滑鼠鍵盤活動了多久
             this.lab_stopTime.BackColor = System.Drawing.Color.Transparent;
             this.lab_stopTime.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.lab_stopTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lab_stopTime.Location = new System.Drawing.Point(72, 26);
+            this.lab_stopTime.Location = new System.Drawing.Point(72, 22);
             this.lab_stopTime.Name = "lab_stopTime";
             this.lab_stopTime.Size = new System.Drawing.Size(63, 15);
             this.lab_stopTime.TabIndex = 5;
@@ -82,7 +86,7 @@ namespace 滑鼠鍵盤活動了多久
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(3, 26);
+            this.label4.Location = new System.Drawing.Point(3, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 4;
@@ -102,14 +106,66 @@ namespace 滑鼠鍵盤活動了多久
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // lab_distance
+            // 
+            this.lab_distance.AutoSize = true;
+            this.lab_distance.BackColor = System.Drawing.Color.Transparent;
+            this.lab_distance.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.lab_distance.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lab_distance.Location = new System.Drawing.Point(72, 37);
+            this.lab_distance.Name = "lab_distance";
+            this.lab_distance.Size = new System.Drawing.Size(40, 15);
+            this.lab_distance.TabIndex = 7;
+            this.lab_distance.Text = "km/m";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(3, 37);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "動了多遠：";
+            // 
+            // lab_keyCount
+            // 
+            this.lab_keyCount.AutoSize = true;
+            this.lab_keyCount.BackColor = System.Drawing.Color.Transparent;
+            this.lab_keyCount.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.lab_keyCount.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lab_keyCount.Location = new System.Drawing.Point(72, 52);
+            this.lab_keyCount.Name = "lab_keyCount";
+            this.lab_keyCount.Size = new System.Drawing.Size(39, 15);
+            this.lab_keyCount.TabIndex = 9;
+            this.lab_keyCount.Text = "count";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(3, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 15);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "敲了幾次：";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(147, 46);
+            this.ClientSize = new System.Drawing.Size(162, 73);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.lab_keyCount);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lab_distance);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lab_activeTime);
             this.Controls.Add(this.lab_stopTime);
@@ -138,6 +194,10 @@ namespace 滑鼠鍵盤活動了多久
         private Label label4;
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem closeToolStripMenuItem;
+        private Label lab_distance;
+        private Label label5;
+        private Label lab_keyCount;
+        private Label label3;
     }
 }
 
