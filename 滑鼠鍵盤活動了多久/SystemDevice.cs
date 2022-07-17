@@ -195,11 +195,18 @@ namespace 滑鼠鍵盤活動了多久
 
         public static (int Width, int Height) GetScreenMillimeters()
         {
-            Graphics g = Graphics.FromHwnd(IntPtr.Zero);
-            IntPtr desktop = g.GetHdc();
-            int width = GetDeviceCaps(desktop, (int)DeviceCap.HORZSIZE);
-            int height = GetDeviceCaps(desktop, (int)DeviceCap.VERTSIZE);
-            return (width, height);
+            try
+            {
+                Graphics g = Graphics.FromHwnd(IntPtr.Zero);
+                IntPtr desktop = g.GetHdc();
+                int width = GetDeviceCaps(desktop, (int)DeviceCap.HORZSIZE);
+                int height = GetDeviceCaps(desktop, (int)DeviceCap.VERTSIZE);
+                return (width, height);
+            }
+            catch
+            {
+                return (0, 0);
+            }
         }
     }
 }

@@ -33,25 +33,28 @@ namespace 滑鼠鍵盤活動了多久
 
         public void CalculateTravelDistance(Point nowPoint, Point lastPoint)
         {
-            //根號 ((x2-x1)^2 + (y2-y1)^2)  
-
-            var x = nowPoint.X - lastPoint.X;
-            var y = nowPoint.Y - lastPoint.Y;
+            //根號 ((x2-x1)^2 + (y2-y1)^2)
 
             //螢幕物理大小(理論值)
             var scr = SystemDevice.GetScreenMillimeters();
-            //解析度比率(公尺換算)
-            var pw = Screen.PrimaryScreen.Bounds.Width / ((decimal)scr.Width / 10 / 100);
-            var ph = Screen.PrimaryScreen.Bounds.Height / ((decimal)scr.Height / 10 / 100);
-            var mmX = x / pw;
-            var mmY = y / ph;
+            if (scr.Height > 0 && scr.Width > 0)
+            {
+                var x = nowPoint.X - lastPoint.X;
+                var y = nowPoint.Y - lastPoint.Y;
 
-            //計算距離(公尺)
-            var p2 = Sqrt((mmX * mmX) + (mmY * mmY));
+                //解析度比率(公尺換算)
+                var pw = Screen.PrimaryScreen.Bounds.Width / ((decimal)scr.Width / 10 / 100);
+                var ph = Screen.PrimaryScreen.Bounds.Height / ((decimal)scr.Height / 10 / 100);
+                var mmX = x / pw;
+                var mmY = y / ph;
 
-            Delegate_Sender<decimal> SentDistanceResults = Sent_DistanceResults;
+                //計算距離(公尺)
+                var p2 = Sqrt((mmX * mmX) + (mmY * mmY));
 
-            this.Invoke(SentDistanceResults, p2);
+                Delegate_Sender<decimal> SentDistanceResults = Sent_DistanceResults;
+
+                this.Invoke(SentDistanceResults, p2);
+            }
         }
 
         public static decimal Sqrt(decimal x, decimal epsilon = 0.0M)
