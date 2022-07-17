@@ -29,13 +29,9 @@ namespace 滑鼠鍵盤活動了多久
         private static decimal nowDistanceM = 0;
         public void Sent_DistanceResults(decimal value)
         {
-            if (value <= 0)
+            if (value > 0)
             {
-                lab_distance.ResetText();
-            }
-            else
-            {
-                if (decimal.MaxValue - nowDistanceM < value)
+                if ((decimal.MaxValue - nowDistanceM) < value)
                     lab_distance.Text = "無法計算了";
                 else
                 {
@@ -45,7 +41,7 @@ namespace 滑鼠鍵盤活動了多久
                         lab_distance.Text = $"{nowM.ToString()}m";
                     else
                     {
-                        lab_distance.Text = $"{DecimalTruncate(nowM / 1000, 3).ToString()}km";
+                        lab_distance.Text = $"{DecimalTruncate(nowM / 1000m, 3)}km";
                     }
                 }
             }
@@ -66,7 +62,10 @@ namespace 滑鼠鍵盤活動了多久
                 lab_keyCount.ResetText();
             }
             else
-                lab_keyCount.Text = (nowKeyPressCount = nowKeyPressCount + value).ToString();
+            {
+                nowKeyPressCount = nowKeyPressCount + value;
+                lab_keyCount.Text = nowKeyPressCount.ToString();
+            }
         }
     }
 }

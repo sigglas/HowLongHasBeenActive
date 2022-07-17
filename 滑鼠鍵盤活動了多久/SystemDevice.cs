@@ -183,8 +183,6 @@ namespace 滑鼠鍵盤活動了多久
         {
             Graphics g = Graphics.FromHwnd(IntPtr.Zero);
             IntPtr desktop = g.GetHdc();
-            int aaaa = GetDeviceCaps(desktop, (int)DeviceCap.HORZSIZE);
-            int bbbb = GetDeviceCaps(desktop, (int)DeviceCap.VERTSIZE);
             int LogicalScreenHeight = GetDeviceCaps(desktop, (int)DeviceCap.VERTRES);
             int PhysicalScreenHeight = GetDeviceCaps(desktop, (int)DeviceCap.DESKTOPVERTRES);
 

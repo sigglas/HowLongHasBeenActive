@@ -50,16 +50,17 @@ namespace 滑鼠鍵盤活動了多久
 
                 //計算距離(公尺)
                 var p2 = Sqrt((mmX * mmX) + (mmY * mmY));
-
-                Delegate_Sender<decimal> SentDistanceResults = Sent_DistanceResults;
-
-                this.Invoke(SentDistanceResults, p2);
+                if (p2 > 0)
+                {
+                    Delegate_Sender<decimal> SentDistanceResults = Sent_DistanceResults;
+                    this.Invoke(SentDistanceResults, p2);
+                }
             }
         }
 
         public static decimal Sqrt(decimal x, decimal epsilon = 0.0M)
         {
-            if (x < 0) throw new OverflowException("Cannot calculate square root from a negative number");
+            if (x < 0) return 0m;
 
             decimal current = (decimal)Math.Sqrt((double)x), previous;
             do
